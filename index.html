@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Reports</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="input-col">
+          <h1>Get Your City Weather Report</h1>
+          <div class="add-info-wrapper">
+            <input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="Enter Your City"
+            />
+            <button id="getWeather">Get Weather</button>
+          </div>
+        </div>
+        <div class="data-col" id="data-col">
+          <h2 id="city-name"></h2>
+          <h3 id="city-temp"></h3>
+          <p id="extra-info"></p>
+        </div>
+        <div class="hidden" id="error-message">
+          <p>City Not Found....</p>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
