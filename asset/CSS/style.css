@@ -51,7 +51,9 @@ body {
     transform: rotate(360deg);
   }
 }
-
+svg {
+  height: 50px;
+}
 .hidden {
   display: none !important;
 }

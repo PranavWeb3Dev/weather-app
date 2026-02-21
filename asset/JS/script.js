@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
         const data = await getWeatherData(city);
+        console.log(data)
         showWeatherData(data);
     } catch (err) {
         showError();
@@ -49,7 +50,7 @@ function showWeatherData(data) {
     dataInfo.classList.remove("hidden");
 
     const { name, main, weather } = data;
-
+    console.log(weather[0].main);
     showCityName.textContent = name;
     cityTemp.textContent = `${main.temp}°C`;
     extraInfo.textContent = weather[0].description;
